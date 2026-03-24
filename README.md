@@ -4,7 +4,7 @@ A unified tool for automatically finding, downloading, and importing UFC events 
 
 ## Features
 
-- **Find**: Automatically scans for upcoming UFC events and queues them in qBittorrent.
+- **Find**: Automatically scans for recent UFC events and queues them in qBittorrent.
 - **Import**: Automatically renames and moves completed downloads into your library with KODI-compatible NFO files.
 - **Art**: A simple GUI to manually fetch missing artwork for your event folders.
 
