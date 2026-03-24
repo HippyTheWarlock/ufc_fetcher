@@ -36,7 +36,7 @@ The tool loads configuration from `~/.ufc_fetcher/config.json`. You can also use
   "qbittorrent_category": "UFC",
   "library_path": "D:\\library\\UFC",
   "downloads_path": "D:\\downloads\\UFC",
-  "sports_db_url": "https://www.thesportsdb.com/api/v1/json/123",
+  "sports_db_url": "https://www.thesportsdb.com/api/v1/json/123", // default public API key
   "language_preference": "en", // ISO 639-1 code (e.g., "en", "ru"). Leave blank for no preference.
   "quality_preference": "1080", // Options: "480", "720", "1080". Leave blank for no preference.
   "codec_preference": "x265", // Options: "x264", "x265". Leave blank for no preference
