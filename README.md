@@ -8,6 +8,10 @@ A unified tool for automatically finding, downloading, and importing UFC events 
 - **Import**: Automatically renames and moves completed downloads into your library with KODI-compatible NFO files.
 - **Art**: A simple GUI to manually fetch missing artwork for your event folders.
 
+## Compatibility
+
+Requires Prowlarr integration to search for releases. Currently the only compatible torrent client is qBittorrent.
+
 ## Installation
 
 ```bash
