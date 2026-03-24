@@ -4,9 +4,9 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 from typing import Optional
 
-from ..models import NFODict, ArtDict
-from ..core.utils import match_str, logger
-from ..config import settings
+from ufc_fetcher.models import NFODict, ArtDict
+from ufc_fetcher.core.utils import match_str, logger
+from ufc_fetcher.config import settings
 
 CARD_TYPES = {1: 'Early Prelims', 2: 'Prelims', 3: 'Main Card'}
 

@@ -4,9 +4,9 @@ from pathlib import Path
 from typing import List
 from filetype import guess
 
-from ..config import settings
-from ..importer.metadata import get_event_name_from_torrent, fetch_event_info, write_nfo, CARD_TYPES
-from .art import fetch_art_for_folder
+from ufc_fetcher.config import settings
+from ufc_fetcher.importer.metadata import get_event_name_from_torrent, fetch_event_info, write_nfo, CARD_TYPES
+from ufc_fetcher.importer.art import fetch_art_for_folder
 
 logger = logging.getLogger(__name__)
 

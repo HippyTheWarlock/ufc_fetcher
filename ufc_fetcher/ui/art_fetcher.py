@@ -3,8 +3,8 @@ from tkinter import filedialog
 from pathlib import Path
 from pathlib import Path
 
-from ..config import settings
-from ..importer.art import fetch_art_for_folder
+from ufc_fetcher.config import settings
+from ufc_fetcher.importer.art import fetch_art_for_folder
 
 class ArtFetcherApp:
     def __init__(self):

@@ -1,4 +1,7 @@
 import re
+import logging
+
+logger = logging.getLogger(__name__)
 
 def match_str(pattern: str, data: str, case_sensitive: bool = False) -> str:
     flag = 0 if case_sensitive else re.IGNORECASE

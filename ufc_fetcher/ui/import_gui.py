@@ -3,8 +3,8 @@ from tkinter import filedialog
 from pathlib import Path
 import logging
 
-from ..config import settings
-from ..importer.manager import process_import
+from ufc_fetcher.config import settings
+from ufc_fetcher.importer.manager import process_import
 
 logger = logging.getLogger(__name__)
 

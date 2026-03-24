@@ -1,6 +1,6 @@
 import logging
 from qbittorrentapi import Client, LoginFailed, APIError
-from ..config import settings
+from ufc_fetcher.config import settings
 
 logger = logging.getLogger(__name__)
 

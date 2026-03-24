@@ -2,12 +2,12 @@ import argparse
 import logging
 from pathlib import Path
 
-from .config import settings
-from .scanner.browse import collect_relevant_events
-from .scanner.search import find_best_releases
-from .core.qbit import add_torrent, get_torrents
-from .importer.manager import process_import
-from .importer.metadata import get_event_name_from_torrent
+from ufc_fetcher.config import settings
+from ufc_fetcher.scanner.browse import collect_relevant_events
+from ufc_fetcher.scanner.search import find_best_releases
+from ufc_fetcher.core.qbit import add_torrent, get_torrents
+from ufc_fetcher.importer.manager import process_import
+from ufc_fetcher.importer.metadata import get_event_name_from_torrent
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger("ufc_fetcher")
@@ -58,20 +58,20 @@ def cmd_import(args):
             logger.info(f"Import complete. Imported to: {[str(p) for p in imported]}")
     else:
         # GUI Fallback
-        from .ui.import_gui import ImportApp
+        from ufc_fetcher.ui.import_gui import ImportApp
         app = ImportApp()
         app.run(infohash=args.infohash)
 
 def cmd_art(args):
     """Fetch artwork for an event folder."""
     if args.path:
-        from .importer.art import fetch_art_for_folder
+        from ufc_fetcher.importer.art import fetch_art_for_folder
         path = Path(args.path)
         logger.info(f"Fetching artwork for {path}")
         fetch_art_for_folder(path)
     else:
         # GUI Fallback
-        from .ui.art_fetcher import ArtFetcherApp
+        from ufc_fetcher.ui.art_fetcher import ArtFetcherApp
         app = ArtFetcherApp()
         app.run()
 

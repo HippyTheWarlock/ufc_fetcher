@@ -3,8 +3,8 @@ import requests
 from datetime import datetime
 from typing import List, Dict
 
-from ..config import settings
-from ..importer.metadata import get_event_name_from_torrent
+from ufc_fetcher.config import settings
+from ufc_fetcher.importer.metadata import get_event_name_from_torrent
 
 logger = logging.getLogger(__name__)
 
