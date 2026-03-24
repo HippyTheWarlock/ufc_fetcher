@@ -1,0 +1,17 @@
+{
+    "prowlarr_url": "http://localhost:9696",
+    "prowlarr_api_key": "YOUR_PROWLARR_KEY",
+    "qbittorrent_host": "localhost",
+    "qbittorrent_port": 8080,
+    "qbittorrent_username": "admin",
+    "qbittorrent_password": "admin_password",
+    "qbittorrent_category": "UFC",
+    "library_path": "C:\\Media\\UFC",
+    "downloads_path": "C:\\Downloads",
+    "sports_db_url": "https://www.thesportsdb.com/api/v1/json/123",
+    "language_preference": "en",
+    "quality_preference": "1080",
+    "codec_preference": "x265",
+    "event_types": "all",
+    "full_or_main": "full"
+}
